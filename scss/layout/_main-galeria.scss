@@ -1,0 +1,144 @@
+.fondoGaleria {
+    background-image: url("../Assets/Imgs/rosario30.jpg");
+    background-repeat: $background-repeat-general;
+    background-size: $background-size-general;
+    height: $variable-general;
+}
+
+.estiloGaleria {
+    img {
+        border: solid black 5px;
+        /**aplico animacion**/
+
+        -webkit-animation-name: shake;
+        animation-name: shake;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+}
+
+@-webkit-keyframes shake {
+
+    from,
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+@keyframes shake {
+
+    from,
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+.posicionImagenes {
+    width: 100%;
+    padding-top: 25px;
+    padding-left: 25px;
+    display: grid;
+    grid-template-columns:(3,1fr) ;
+    grid-template-rows:(3,1fr) ;
+   
+    grid-template-areas:
+        "im1 im2 im3"
+        "im4 im5 im6"
+        "im7 im8 im9"
+
+    ;
+    row-gap: 25px;
+
+}
+
+.im1 {
+    img {
+        grid-area: im1;
+    }
+}
+
+.im2 {
+    img {
+        grid-area: im2;
+    }
+}
+
+.im3 {
+    img {
+        grid-area: im3;
+    }
+}
+
+.im4 {
+    img {
+        grid-area: im4;
+    }
+}
+
+.im5 {
+    img {
+        grid-area: im5;
+    }
+}
+
+.im6 {
+    img {
+        grid-area: im6;
+    }
+}
+
+.im7 {
+    img {
+        grid-area: im7;
+    }
+}
+
+.im8 {
+    img {
+        grid-area: im8;
+    }
+}
+
+.im9 {
+    img {
+        grid-area: im9;
+    }
+}

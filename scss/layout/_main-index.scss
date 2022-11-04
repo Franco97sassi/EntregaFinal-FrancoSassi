@@ -1,0 +1,20 @@
+.fondoIndex {
+    background-image: url("../Assets/Imgs/rosario41.jpg");
+    background-repeat: $background-repeat-general;
+    background-size: $background-size-general;
+    height: $variable-general;
+}
+
+.mapaUbicacion {
+    /**aplico flexbox**/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.videosPosicion {
+    /**aplico flexbox y mixins**/
+    @include props-flex(row,space-around,center);
+   width: 100%;
+}

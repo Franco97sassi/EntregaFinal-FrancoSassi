@@ -1,0 +1,121 @@
+main {
+    background-color: #c6e3ee;
+    padding-bottom: 25px;
+}
+
+h1 {
+    color: rgb(253, 253, 253);
+    text-align: center;
+    font-size: 8.0rem;
+    font-family: 'Poppins', sans-serif;
+    -webkit-animation-name: heartBeat;
+    animation-name: heartBeat;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+}
+
+@-webkit-keyframes heartBeat {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    14% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    28% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    42% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes heartBeat {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    14% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    28% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    42% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 254, 253);
+    font-weight: bold;
+}
+
+.textoFondo {
+    color: azure;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.7;
+    color: rgb(14, 9, 9);
+    font-weight: normal;
+    font-size: 2.0rem;
+
+}
+
+h2 {
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(15, 9, 2);
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.0rem;
+}
+/**aplico extend**/
+h3 {
+     @extend h2;
+    font-size: 3.0rem;
+
+}
+
+h4 {
+    @extend h2;
+    font-size: 2.5rem;
+}
+
+.posicionTitulos {
+    @include props-flex(row,center,center);
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+ }

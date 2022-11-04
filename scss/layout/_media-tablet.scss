@@ -1,0 +1,111 @@
+ /**Tablet seccion Index**/
+@media(max-width:768px){
+   .textoFondo {
+      color: azure;
+      font-weight: bold;
+      text-align: center
+  }
+   .videosPosicion {
+      /**aplico flexbox y mixins**/
+      @include props-flex(column,space-around,center);
+     width: 100%;
+  }
+ }
+ h1,h2,h3,h4,p,ul li     {
+   text-align: center;
+ }
+  
+ /*Tablet top5*/
+
+@media (max-width: 768px) {
+    .logo {
+       text-align: center;
+    }
+    .ubicacionTop5 {
+
+        /**aplico grid**/
+        /**Para tablet la disposicion
+        va a ser practicamente igual a desktop**/
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+           "top1   top2  "
+           "top3   top4  "
+           "top5   .   "
+        ;
+        gap: 10px;
+     }
+  
+     .seccionFooterArriba {div {a {
+        display: none;
+     }}}
+  
+     .top1 {p {
+        text-align: left;
+     }}
+  
+     .top2 {p {
+        text-align: left;
+     }}
+  
+     .top3 {p {
+        text-align: left;
+     }}
+  
+     .top4 {p {
+        text-align: left;
+     }}
+  
+     .top5 {p {
+        text-align: left;
+     }}
+  }
+  
+ /*Tablet galeria*/
+ @media (max-width: 768px) {
+    
+    .nav {
+ 
+       /**aplico flexbox**/
+ 
+       justify-content: center;
+    }
+ 
+    .posicionImagenes {
+       width: 100%;
+       display: grid;
+        grid-template-columns:  (2,1fr);
+        grid-template-rows:  (5,1fr);
+      
+       grid-template-areas:
+          "im1 im2"
+          "im3 im4"
+          "im5 im6"
+          "im7 im8"
+          "im9 ."
+    }
+ 
+    p {
+       text-align: center;
+    }
+ 
+ }
+  /**Tablet Mas Info**/
+  @media(max-width:768px) {
+   .posicionEntradas {
+      @include props-flex(column,space-evenly,center);
+       width: 100%;
+    
+  }
+  .posicionHoteles {
+   @include props-flex(column,space-evenly,center);
+    width: 100%;
+
+
+   padding-left: 25px;
+  
+}
+ 
+}
+ 

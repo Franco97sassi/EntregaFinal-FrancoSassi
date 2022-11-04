@@ -6,7 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="/Assets/icons/monumento.png" type="image/x-icon">
+    <meta name="description" content="Vida en Rosario">
+    <meta name="author" content="Franco Sassi">
+    <meta name="copyright" content="Rosario Turismo">
+
 </head>
 
 <body>
@@ -18,14 +25,23 @@
 
         </div>
 
-        <nav>
-            <ul class="nav">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="top5.html">Top5</a> </li>
-                <li><a href="galeria.html">Galeria</a> </li>
-                <li><a href="mas_info.html">Mas Info </a> </li>
-                <li><a href="contacto.html">Contacto</a> </li>
-            </ul>
+        <nav class="  navbar navbar-expand-lg nav ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class=" navbar-nav me-auto ">
+                        <li class="nav-item"><a href="../index.html" class="nav-link ">Home</a></li>
+                        <li class="nav-item"><a href="top5.html" class="nav-link  ">Top5</a> </li>
+                        <li class="nav-item"><a href="galeria.html" class="nav-link active ">Galeria</a> </li>
+                        <li class="nav-item"><a href="mas_info.html" class="nav-link ">Mas Info </a> </li>
+                        <li class="nav-item"><a href="contacto.html" class="nav-link ">Contacto</a> </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -33,14 +49,14 @@
         <section class="fondoGaleria">
             <h1>Galeria De Imagenes </h1>
             <article>
-                <p class="textoFondo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda placeat
+                <p class="textoFondo"> Fotos de los distintos barrios de Rosario. <br> Assumenda placeat
                     reiciendis eius eos?
-                   Impedit, veniam atque adipisci neque, magnam ipsum iste minus consequatur, earum consequuntur quas
+                    Impedit, veniam atque adipisci neque, magnam ipsum iste minus consequatur, earum consequuntur quas
                     eaque quibusdam perferendis autem!</p>
 
             </article>
         </section>
-        <section class="estiloGaleria posicionImagenes">
+        <section class="estiloGaleria posicionImagenes container-fluid">
             <div class="im1"><img src="../Assets/Imgs/rosario7.jpg" width="350" height="300"> </div>
             <div class="im2"> <img src="../Assets/Imgs/rosario8.jpg" width="350" height="300"> </div>
             <div class="im3"><img src="../Assets/Imgs/rosario9.jpg" width="350" height="300"></div>
@@ -49,7 +65,7 @@
             <div class="im6"><img src="../Assets/Imgs/rosario13.jpg" width="350" height="300"></div>
             <div class="im7"><img src="../Assets/Imgs/rosario15.jpg" width="350" height="300"></div>
             <div class="im8"><img src="../Assets/Imgs/rosario16.jpg" width="350" height="300"></div>
-            <div class="im9"  ><img src="../Assets/Imgs/rosario18.jpg" width="350" height="300"></div>
+            <div class="im9"><img src="../Assets/Imgs/rosario18.jpg" width="350" height="300"></div>
         </section>
 
 
@@ -57,8 +73,8 @@
 
     </main>
     <footer class="seccionFooter">
-        
-        <section class="seccionRedes"> 
+
+        <section class="seccionRedes">
 
             <a href="https://www.facebook.com/"><img src="../Assets/icons/facebook-1.png" alt="" width="100%"
                     height="50px"></a>
@@ -73,6 +89,14 @@
             </div>
         </section>
     </footer>
+    <!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

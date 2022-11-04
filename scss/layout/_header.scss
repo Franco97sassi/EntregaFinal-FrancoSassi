@@ -1,0 +1,51 @@
+.logo {
+    color: rgb(255, 255, 255);
+    /**Uso de Gradientes**/
+    background-image: linear-gradient(to right, rgb(47, 0, 61), rgb(139, 90, 172));
+    font-weight: bold;
+    text-decoration: none;
+    text-align: left;
+    font-size: 4.0rem;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+
+    /** aplico Animacion **/
+    animation-duration: 5s;
+    animation-name: logoInicio;
+}
+
+@keyframes logoInicio {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/**aplico nesting**/
+ 
+.nav {
+    background-color: rgb(156, 92, 175);
+    line-height: 2;
+    list-style-type: none;
+    font-style: italic;
+    height: 100%;
+
+    /**aplico flexbox y mixin**/
+    @include props-flex(row,center,center);
+    
+    gap: 50px;
+    padding-right: 15px;
+    
+
+    li {
+        a {
+            text-decoration: none;
+            color: rgb(255, 254, 253);
+            font-weight: bold;
+            font-size: 2.0rem;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.fondoMasInfo {
+    background-image: url("../Assets/Imgs/im1.jpg");
+    background-repeat: $background-repeat-general;
+    background-size: $background-size-general;
+    height: $variable-general;
+}
+
+.posicionEntradas {
+    @include props-flex(row,space-evenly,center);
+    width:100%
+ 
+}
+
+section {
+    div {
+        h4 {
+            input {
+             @extend .button
+            }
+        }
+    }
+}
+
+.enlaceTransporte {
+    padding-left: 25px;
+div , h3{
+        text-align: left;
+    }
+}
+ 
+
+
+
+.trenes {
+    h3{
+        text-align: left;
+    }
+    ul {
+        li {
+            list-style-type: none;
+            text-align: left;
+
+        }
+    }
+}
+
+.rutas {
+    h3{
+        text-align: left;
+    }
+    ul {
+        li {
+            list-style-type: none;
+            text-align: left;
+        }
+    }
+}
+
+/**aplico nesting**/
+.enlaceTransporte {
+    a {
+        font-size: 2.0rem;
+        color: #000000;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    ul {
+        li {
+            font-size: 2.0rem;
+        }
+    }
+}
+ 
+
+.posicionHoteles {
+    padding-left: 25px;
+    display: flex;
+    flex-direction: row;
+}
