@@ -1,0 +1,1 @@
+Utilize Prepros para configurar sass ya que no me funcionaban ninguna de las instalaciones de consola
