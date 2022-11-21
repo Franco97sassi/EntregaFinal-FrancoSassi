@@ -1,26 +1,36 @@
 .padding {
     padding-bottom: 0px;
+    
 }
 
 .fondoContacto {
-    background-image: url("../Assets/Imgs/rosario36.jpg");
+    background-image: url("../Assets/Imgs/rosario41.jpg");
     background-repeat: $background-repeat-general;
     background-size: $background-size-general;
     height: $variable-general;
 }
 
-.formulario {
-    text-align: center;
-}
+.formulario{
+    padding-left: 25px;
+  h3 ,h4
+  {
+    text-align: left;
+    border-radius: 5px;
+
+}}
 
 .fondoForm {
     background-color: azure;
     color: rgb(0, 0, 0);
     font-family: 'Noto Sans Mono', monospace;
+    border-radius: 5px;
+
 }
 
 textarea {
     font-size: 1.5rem;
+    border-radius: 5px;
+
 }
 
  

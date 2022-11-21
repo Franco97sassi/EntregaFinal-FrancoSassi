@@ -1,25 +1,20 @@
- @import "./utilities/variable";
- @import "./utilities/mixins";
- @import "./base/reset";
- @import "./base/typo";
- @import "./components/buttons";
- html {
-     font-family: 'Noto Sans Mono', monospace;
-     font-size: 62.5%;
- }
-
- @import "./layout/header";
- @import "./layout/main";
- @import "./layout/main-index";
- @import "./layout/main-top5";
- @import "./layout/main-galeria";
- @import "./layout/main-mas_info";
- @import "./layout/main-contacto";
- @import "./layout/_footer";
-
- /*Seccion Responsive*/
-
- @import "./layout/media-tablet";
- @import "./layout/media-mobile";
+@import "./base/reset";
+@import "./utilities/variable";
+@import "./utilities/mixins";
+@import "./base/typo";
+@import "./components/buttons";
 
  
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/main-index";
+@import "./layout/main-top5";
+@import "./layout/main-galeria";
+@import "./layout/main-mas_info";
+@import "./layout/main-contacto";
+@import "./layout/_footer";
+
+/*Seccion Responsive*/
+
+@import "./layout/media-tablet";
+@import "./layout/media-mobile";

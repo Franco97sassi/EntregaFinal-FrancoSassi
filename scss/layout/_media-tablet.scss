@@ -1,7 +1,13 @@
  /**Tablet seccion Index**/
 @media(max-width:768px){
+   .fondoIndex{
+      background-image: url("../Assets/Imgs/rosario37.jpg");
+      background-repeat: $background-repeat-general;
+      background-size: contain;
+      height: $variable-general;
+  }
    .textoFondo {
-      color: azure;
+      color: rgb(0, 0, 0);
       font-weight: bold;
       text-align: center
   }
@@ -18,6 +24,12 @@
  /*Tablet top5*/
 
 @media (max-width: 768px) {
+   .fondoTop5 {
+      background-image: url("../Assets/Imgs/rosario33.jpg");
+      background-repeat: $background-repeat-general;
+      background-size: contain;
+      height: $variable-general;
+  }
     .logo {
        text-align: center;
     }
@@ -30,9 +42,11 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
-           "top1   top2  "
-           "top3   top4  "
-           "top5   .   "
+           "top1  "
+           "top2"
+           "top3 "
+           "top4"
+           "top5"
         ;
         gap: 10px;
      }
@@ -64,14 +78,15 @@
   
  /*Tablet galeria*/
  @media (max-width: 768px) {
+   .fondoGaleria {
+      background-image: url("../Assets/Imgs/rosario30.jpg");
+      background-repeat: $background-repeat-general;
+      background-size: contain;
+      height: $variable-general;
+       
+  }
     
-    .nav {
- 
-       /**aplico flexbox**/
- 
-       justify-content: center;
-    }
- 
+   
     .posicionImagenes {
        width: 100%;
        display: grid;
@@ -93,6 +108,12 @@
  }
   /**Tablet Mas Info**/
   @media(max-width:768px) {
+   .fondoMasInfo {
+      background-image: url("../Assets/Imgs/im1.jpg");
+      background-repeat: $background-repeat-general;
+      background-size: contain;
+      height: $variable-general;
+  }
    .posicionEntradas {
       @include props-flex(column,space-evenly,center);
        width: 100%;
@@ -108,4 +129,11 @@
 }
  
 }
- 
+   /**Tablet Contacto**/
+   @media(max-width:768px) {
+   .fondoContacto {
+      background-image: url("../Assets/Imgs/rosario41.jpg");
+      background-repeat: $background-repeat-general;
+      background-size: contain;
+      height: $variable-general;
+   }}

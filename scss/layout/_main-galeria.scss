@@ -5,43 +5,14 @@
     height: $variable-general;
 }
 
-.estiloGaleria {
+.imagenes {
     img {
-        border: solid black 5px;
+        border: solid rgb(0, 0, 0) 5px;
+        border-radius: 5px;
         /**aplico animacion**/
-
-        -webkit-animation-name: shake;
         animation-name: shake;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-fill-mode: both;
+        animation-duration: 2s;
         animation-fill-mode: both;
-    }
-}
-
-@-webkit-keyframes shake {
-
-    from,
-    to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-
-    10%,
-    30%,
-    50%,
-    70%,
-    90% {
-        -webkit-transform: translate3d(-10px, 0, 0);
-        transform: translate3d(-10px, 0, 0);
-    }
-
-    20%,
-    40%,
-    60%,
-    80% {
-        -webkit-transform: translate3d(10px, 0, 0);
-        transform: translate3d(10px, 0, 0);
     }
 }
 
@@ -83,7 +54,6 @@
         "im1 im2 im3"
         "im4 im5 im6"
         "im7 im8 im9"
-
     ;
     row-gap: 25px;
 

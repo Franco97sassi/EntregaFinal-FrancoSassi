@@ -5,11 +5,17 @@
     height: $variable-general;
 }
 
-.posicionEntradas {
-    @include props-flex(row,space-evenly,center);
-    width:100%
+.posicionEntradas   {
+    @include props-flex(column,center,flex-start);
+    width:100%;
+    padding-left: 25px;
+    div,h4{
+        text-align: left;
+
+    }
  
 }
+ 
 
 section {
     div {
@@ -20,10 +26,13 @@ section {
         }
     }
 }
+article div p{
+    text-align: left;
+}
 
 .enlaceTransporte {
     padding-left: 25px;
-div , h3{
+div , h3,a{
         text-align: left;
     }
 }
@@ -33,16 +42,23 @@ div , h3{
 
 .trenes {
     h3{
-        text-align: left;
-    }
+        text-align: left;}
+     
     ul {
+       p { text-align: left;
+        }
         li {
             list-style-type: none;
             text-align: left;
+            a{
+                list-style-type: none;
+                text-align: left;
+    
+            }
 
         }
     }
-}
+} 
 
 .rutas {
     h3{
@@ -52,6 +68,7 @@ div , h3{
         li {
             list-style-type: none;
             text-align: left;
+       
         }
     }
 }
@@ -75,6 +92,15 @@ div , h3{
 
 .posicionHoteles {
     padding-left: 25px;
-    display: flex;
-    flex-direction: row;
-}
+    @include props-flex(row,space-around,center);
+  article img{
+    padding-right: 25px;
+text-align: center;}
+
+p    { text-align: left;
+
+}}
+ 
+ 
+
+ 

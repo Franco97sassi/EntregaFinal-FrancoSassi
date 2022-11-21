@@ -1,23 +1,26 @@
-.seccionFooter {
+footer {
     background-color: rgb(82, 83, 150);
+}
+
+.copyright {
+    p {
+        text-align: left;
+        font-size: 1.0 rem;
+    }
 }
 
 .seccionRedes {
     /*aplico flexbox*/
-    @include props-flex(row,center,center);
-
+    @include props-flex(row, center, center);
 }
 
 .seccionFooterArriba {
-    div {
-        a {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: rgb(255, 255, 255);
+    text-align: right;
 
-            /*aplico flexbox*/
-            @include props-flex(flex-end,center,center);
-             padding-right: 10px;
-        }
+    a {
+        font-size: 2.0rem;
+        color: rgb(255, 255, 255);
+        padding-right: 10px;
     }
+
 }

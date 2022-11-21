@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,40 +7,47 @@
           box-sizing: border-box;
 }
 
+html {
+  font-family: "Lato", monospace;
+  font-size: 62.5%;
+}
+
 .button, section div h4 input {
   color: white;
-  background-color: #8080ff;
+  background-color: #000000;
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 1.7;
 }
 
-html {
-  font-family: "Noto Sans Mono", monospace;
-  font-size: 62.5%;
+header {
+  background-color: rgb(156, 92, 175);
 }
 
 .logo {
   color: rgb(255, 255, 255);
-  /**Uso de Gradientes**/
-  background-image: -webkit-gradient(linear, left top, right top, from(rgb(47, 0, 61)), to(rgb(139, 90, 172)));
-  background-image: linear-gradient(to right, rgb(47, 0, 61), rgb(139, 90, 172));
-  font-weight: bold;
-  text-decoration: none;
-  text-align: left;
+  /** Uso de Gradientes  **/
+  background-image: -webkit-gradient(linear, left top, right top, from(rgb(38, 0, 49)), to(rgb(136, 93, 165)));
+  background-image: linear-gradient(to right, rgb(38, 0, 49), rgb(136, 93, 165));
   font-size: 4rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-style: italic;
   /** aplico Animacion **/
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-name: logoInicio;
           animation-name: logoInicio;
+}
+.logo a {
+  color: white;
 }
 
 @-webkit-keyframes logoInicio {
   0% {
     opacity: 0;
+    background-color: rgb(47, 0, 61);
+    -webkit-transform: scale(2, 1);
+            transform: scale(2, 1);
   }
   100% {
     opacity: 1;
@@ -50,6 +57,9 @@ html {
 @keyframes logoInicio {
   0% {
     opacity: 0;
+    background-color: rgb(47, 0, 61);
+    -webkit-transform: scale(2, 1);
+            transform: scale(2, 1);
   }
   100% {
     opacity: 1;
@@ -60,33 +70,18 @@ html {
   background-color: rgb(156, 92, 175);
   line-height: 2;
   list-style-type: none;
-  font-style: italic;
-  height: 100%;
-  /**aplico flexbox y mixin**/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  gap: 50px;
+  gap: 25px;
   padding-right: 15px;
 }
 .nav li a {
-  text-decoration: none;
   color: rgb(255, 254, 253);
   font-weight: bold;
   font-size: 2rem;
+  text-decoration: none;
 }
 
 main {
-  background-color: #c6e3ee;
+  background-color: #d8d8d8;
   padding-bottom: 25px;
 }
 
@@ -94,7 +89,7 @@ h1 {
   color: rgb(253, 253, 253);
   text-align: center;
   font-size: 8rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   -webkit-animation-name: heartBeat;
   animation-name: heartBeat;
   -webkit-animation-duration: 1.3s;
@@ -155,11 +150,15 @@ a {
   text-decoration: none;
   color: rgb(255, 254, 253);
   font-weight: bold;
+  text-align: left;
 }
 
 .textoFondo {
   color: azure;
-  font-weight: bold;
+  font-weight: normal;
+  color: black;
+  text-align: left;
+  padding-left: 25px;
 }
 
 p {
@@ -167,13 +166,15 @@ p {
   color: rgb(14, 9, 9);
   font-weight: normal;
   font-size: 2rem;
+  font-family: "Lato", monospace;
+  text-align: left;
 }
 
 h2, h4, h3 {
   font-style: italic;
   font-weight: bold;
   color: rgb(15, 9, 2);
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 4rem;
 }
 
@@ -187,24 +188,14 @@ h4 {
 }
 
 .posicionTitulos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
+  width: 100%;
 }
 
 .fondoIndex {
-  background-image: url("../Assets/Imgs/rosario41.jpg");
+  background-image: url("../Assets/Imgs/rosario37.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -222,7 +213,8 @@ h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .videosPosicion {
@@ -251,6 +243,7 @@ h4 {
 .ubicacionTop5 {
   /**aplico grids**/
   width: 100%;
+  padding-left: 25px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 10px 1fr;
@@ -260,15 +253,17 @@ h4 {
       grid-template-areas: "top1   top2  " "top3   top4  " "top5   .   ";
   gap: 10px;
 }
-
-article p {
+.ubicacionTop5 p {
   text-align: left;
 }
 
-.top1 {
+.top1, .top5, .top4, .top3, .top2 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: top1;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
 }
 
 .top2 {
@@ -302,15 +297,16 @@ article p {
   height: 100vh;
 }
 
-.estiloGaleria img {
-  border: solid black 5px;
+.imagenes img {
+  border: solid rgb(0, 0, 0) 5px;
+  border-radius: 5px;
   /**aplico animacion**/
   -webkit-animation-name: shake;
-  animation-name: shake;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+          animation-name: shake;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 @-webkit-keyframes shake {
@@ -327,6 +323,7 @@ article p {
     transform: translate3d(10px, 0, 0);
   }
 }
+
 @keyframes shake {
   from, to {
     -webkit-transform: translate3d(0, 0, 0);
@@ -420,29 +417,44 @@ article p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-line-pack: center;
-      align-content: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   width: 100%;
+  padding-left: 25px;
+}
+.posicionEntradas div, .posicionEntradas h4 {
+  text-align: left;
+}
+
+article div p {
+  text-align: left;
 }
 
 .enlaceTransporte {
   padding-left: 25px;
 }
-.enlaceTransporte div, .enlaceTransporte h3 {
+.enlaceTransporte div, .enlaceTransporte h3, .enlaceTransporte a {
   text-align: left;
 }
 
 .trenes h3 {
   text-align: left;
 }
+.trenes ul p {
+  text-align: left;
+}
 .trenes ul li {
+  list-style-type: none;
+  text-align: left;
+}
+.trenes ul li a {
   list-style-type: none;
   text-align: left;
 }
@@ -475,6 +487,17 @@ article p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.posicionHoteles article img {
+  padding-right: 25px;
+  text-align: center;
+}
+.posicionHoteles p {
+  text-align: left;
 }
 
 .padding {
@@ -482,24 +505,30 @@ article p {
 }
 
 .fondoContacto {
-  background-image: url("../Assets/Imgs/rosario36.jpg");
+  background-image: url("../Assets/Imgs/rosario41.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
 
 .formulario {
-  text-align: center;
+  padding-left: 25px;
+}
+.formulario h3, .formulario h4 {
+  text-align: left;
+  border-radius: 5px;
 }
 
 .fondoForm {
   background-color: azure;
   color: rgb(0, 0, 0);
   font-family: "Noto Sans Mono", monospace;
+  border-radius: 5px;
 }
 
 textarea {
   font-size: 1.5rem;
+  border-radius: 5px;
 }
 
 .enlaceInfo a {
@@ -508,8 +537,13 @@ textarea {
   font-style: italic;
 }
 
-.seccionFooter {
+footer {
   background-color: rgb(82, 83, 150);
+}
+
+.copyright p {
+  text-align: left;
+  font-size: 1 rem;
 }
 
 .seccionRedes {
@@ -528,35 +562,29 @@ textarea {
       align-content: center;
 }
 
-.seccionFooterArriba div a {
-  font-size: 1.8rem;
-  font-weight: bold;
+.seccionFooterArriba {
+  text-align: right;
+}
+.seccionFooterArriba a {
+  font-size: 2rem;
   color: rgb(255, 255, 255);
-  /*aplico flexbox*/
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: flex-end;
-          flex-direction: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
   padding-right: 10px;
 }
 
 /*Seccion Responsive*/
 /**Tablet seccion Index**/
 @media (max-width: 768px) {
+  .fondoIndex {
+    background-image: url("../Assets/Imgs/rosario37.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+  }
   .textoFondo {
-    color: azure;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     text-align: center;
   }
-
   .videosPosicion {
     /**aplico flexbox y mixins**/
     display: -webkit-box;
@@ -579,10 +607,15 @@ h1, h2, h3, h4, p, ul li {
 
 /*Tablet top5*/
 @media (max-width: 768px) {
+  .fondoTop5 {
+    background-image: url("../Assets/Imgs/rosario33.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+  }
   .logo {
     text-align: center;
   }
-
   .ubicacionTop5 {
     /**aplico grid**/
     /**Para tablet la disposicion
@@ -593,213 +626,28 @@ h1, h2, h3, h4, p, ul li {
     grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: 1fr 10px 1fr 10px 1fr;
     grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: "top1   top2  " "top3   top4  " "top5   .   ";
+        grid-template-areas: "top1  " "top2" "top3 " "top4" "top5";
     gap: 10px;
   }
-
   .seccionFooterArriba div a {
     display: none;
   }
-
-  .top1 p {
+  .top1 p, .top2 p, .top3 p, .top4 p, .top5 p {
     text-align: left;
   }
-
   .top2 p {
     text-align: left;
   }
-
   .top3 p {
     text-align: left;
   }
-
   .top4 p {
     text-align: left;
   }
-
   .top5 p {
     text-align: left;
   }
-
-  .top1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-
-  .top2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-  }
-
-  .top3 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-  }
-
-  .top4 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-  }
-
-  .top5 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-  }
-}
-/*Tablet galeria*/
-@media (max-width: 768px) {
-  .nav {
-    /**aplico flexbox**/
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .posicionImagenes {
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 2, 1fr;
-    grid-template-columns: 2, 1fr;
-    -ms-grid-rows: 5, 1fr;
-    grid-template-rows: 5, 1fr;
-        grid-template-areas: "im1 im2" "im3 im4" "im5 im6" "im7 im8" "im9 .";
-  }
-
-  p {
-    text-align: center;
-  }
-
-  .im1 img {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-
-  .im2 img {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-
-  .im3 img {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-
-  .im4 img {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-  }
-
-  .im5 img {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-  }
-
-  .im6 img {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-  }
-
-  .im7 img {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-  }
-
-  .im8 img {
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-  }
-
-  .im9 img {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-  }
-}
-/**Tablet Mas Info**/
-@media (max-width: 768px) {
-  .posicionEntradas {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    width: 100%;
-  }
-
-  .posicionHoteles {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    width: 100%;
-    padding-left: 25px;
-  }
-}
-/**Mobile seccion Index**/
-@media (max-width: 576px) {
-  .textoFondo {
-    color: azure;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  .videosPosicion {
-    /**aplico flexbox y mixins**/
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    width: 100%;
-  }
-}
-/*Mobile Seccion top5*/
-@media (max-width: 576px) {
-  .ubicacionTop5 {
-    /** Para mobile aplico grid y aca si cambio la disposicion**/
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
-    grid-template-rows: repeat(5, 1fr);
-        grid-template-areas: "top1" "top2" "top3" "top4" "top5";
-    gap: 10px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .seccionFooterArriba div a {
-    display: none;
-  }
-
-  p,
-h3 {
-    text-align: center;
-  }
-  .top1 {
+  .top1, .top5, .top4, .top3, .top2 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
@@ -820,8 +668,230 @@ h3 {
     -ms-grid-column: 1;
   }
 }
-/*Mobile Seccion Galeria*/
+/*Tablet galeria*/
+@media (max-width: 768px) {
+  .fondoGaleria {
+    background-image: url("../Assets/Imgs/rosario30.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+  }
+  .posicionImagenes {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2, 1fr;
+    grid-template-columns: 2, 1fr;
+    -ms-grid-rows: 5, 1fr;
+    grid-template-rows: 5, 1fr;
+        grid-template-areas: "im1 im2" "im3 im4" "im5 im6" "im7 im8" "im9 .";
+  }
+  p {
+    text-align: center;
+  }
+  .im1 img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .im2 img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .im3 img {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .im4 img {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .im5 img {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .im6 img {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  .im7 img {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+  .im8 img {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+  }
+  .im9 img {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+}
+/**Tablet Mas Info**/
+@media (max-width: 768px) {
+  .fondoMasInfo {
+    background-image: url("../Assets/Imgs/im1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+  }
+  .posicionEntradas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 100%;
+  }
+  .posicionHoteles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 100%;
+    padding-left: 25px;
+  }
+}
+/**Tablet Contacto**/
+@media (max-width: 768px) {
+  .fondoContacto {
+    background-image: url("../Assets/Imgs/rosario41.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+  }
+}
+/**Mobile seccion Index**/
 @media (max-width: 576px) {
+  .fondoIndex {
+    background-image: url("../Assets/Imgs/rosario37.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+  }
+  .textoFondo {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+  }
+  .videosPosicion {
+    /**aplico flexbox y mixins**/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 100%;
+  }
+}
+/*Mobile Seccion top5*/
+@media (max-width: 576px) {
+  .fondoTop5 {
+    background-image: url("../Assets/Imgs/rosario33.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+  }
+  .ubicacionTop5 {
+    /** Para mobile aplico grid y aca si cambio la disposicion**/
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+    grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: "top1" "top2" "top3" "top4" "top5";
+    gap: 10px;
+  }
+  .ubicacionTop5 p {
+    text-align: center;
+  }
+  .seccionFooterArriba div a {
+    display: none;
+  }
+  p,
+h3 {
+    text-align: center;
+  }
+  .top1, .top2, .top3, .top4, .top5 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: center;
+  }
+  .top2 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: center;
+  }
+  .top3 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: center;
+  }
+  .top4 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: center;
+  }
+  .top5 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: center;
+  }
+  /*Mobile Seccion Galeria*/
+  /**Mobile seccion Mas Info**/
+  .top1, .top5, .top4, .top3, .top2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .top2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .top3 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .top4 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+  .top5 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+  }
+}
+@media (max-width: 576px) and (max-width: 576px) {
+  .fondoGaleria {
+    background-image: url("../Assets/Imgs/rosario30.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+  }
   .posicionImagenes {
     display: -ms-grid;
     display: grid;
@@ -835,47 +905,38 @@ h3 {
         grid-template-areas: "im1" "im2" "im3" "im4" "im5" "im6" "im7" "im8" "im9";
     gap: 25px;
   }
-
   .im1 {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-
   .im2 {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-
   .im3 {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-
   .im4 {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-
   .im5 {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-
   .im6 {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-
   .im7 {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-
   .im8 {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-
   .im9 {
     -ms-grid-column-align: center;
         justify-self: center;
@@ -917,8 +978,13 @@ h3 {
     -ms-grid-column: 1;
   }
 }
-/**Mobile seccion Mas Info**/
-@media (max-width: 576px) {
+@media (max-width: 576px) and (max-width: 576px) {
+  .fondoMasInfo {
+    background-image: url("../Assets/Imgs/im1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+  }
   .posicionEntradas {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -934,7 +1000,44 @@ h3 {
         align-content: center;
     width: 100%;
   }
-
+  .trenes h3 {
+    text-align: center;
+  }
+  .trenes p {
+    text-align: center;
+  }
+  .trenes ul li a {
+    text-align: center;
+  }
+  .trenes .omnibus p {
+    text-align: center;
+  }
+  .trenes .posicion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .rutas ul li {
+    text-align: center;
+  }
+  .rutas h3 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  a {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
   .posicionHoteles {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -950,5 +1053,17 @@ h3 {
         align-content: center;
     width: 100%;
     padding-left: 25px;
+  }
+}
+/**Mobile Contacto**/
+@media (max-width: 576px) {
+  .fondoContacto {
+    background-image: url("../Assets/Imgs/rosario41.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+  }
+  .formulario h4, .formulario h3 {
+    text-align: center;
   }
 }
