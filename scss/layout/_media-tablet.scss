@@ -6,17 +6,11 @@
       background-size: contain;
       height: $variable-general;
   }
-   .textoFondo {
-      color: rgb(0, 0, 0);
-      font-weight: bold;
-      text-align: center
-  }
-   .videosPosicion {
-      /**aplico flexbox y mixins**/
-      @include props-flex(column,space-around,center);
-     width: 100%;
-  }
- }
+  .videosPosicion   {
+   /**aplico flexbox y mixins**/
+   @include props-flex(column,space-evenly,center);
+
+}
  h1,h2,h3,h4,p,ul li     {
    text-align: center;
  }
@@ -39,16 +33,17 @@
         /**Para tablet la disposicion
         va a ser practicamente igual a desktop**/
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: repeat(5, 1fr);
         grid-template-areas:
-           "top1  "
-           "top2"
-           "top3 "
-           "top4"
-           "top5"
+           ". top1 ."
+           ". top2 ."
+           ". top3 ."
+           ". top4 ."
+           ". top5 ."
         ;
         gap: 10px;
+        justify-content: center;
      }
   
      .seccionFooterArriba {div {a {
@@ -56,8 +51,12 @@
      }}}
   
      .top1 {p {
-        text-align: left;
+        text-align: center;
      }}
+     .top1 img{
+      @include props-flex(row,center, center); 
+
+     }
   
      .top2 {p {
         text-align: left;
@@ -112,8 +111,7 @@
       background-image: url("../Assets/Imgs/im1.jpg");
       background-repeat: $background-repeat-general;
       background-size: contain;
-      height: $variable-general;
-  }
+   }
    .posicionEntradas {
       @include props-flex(column,space-evenly,center);
        width: 100%;
@@ -137,3 +135,4 @@
       background-size: contain;
       height: $variable-general;
    }}
+}

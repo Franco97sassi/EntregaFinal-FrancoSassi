@@ -6,24 +6,37 @@
       background-size: contain;
       height: $variable-general;
    }
-  
-   
-   .textoFondo {
-      color: rgb(0, 0, 0);
-      font-weight: bold;
-      text-align: center
+
+   .videosPosicion {
+      /**aplico flexbox y mixins**/
+      @include props-flex(column, space-evenly, center);
+
    }
 
-   .videosPosicion  {
-      /**aplico flexbox y mixins**/
-      @include props-flex(column,center, center);
+   footer {
       width: 100%;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 2fr;
+      grid-template-areas:
+         "copyright ."
+         ". seccionRedes"
+      ;
+   }
+
+   .copyright {
+      grid-area: copyright;
+
+   }
+
+   .seccionRedes {
+      grid-area: seccionRedes;
+      @include props-flex(row, flex-end, flex-end);
    }
 
 }
 
 /*Mobile Seccion top5*/
-
 @media(max-width:576px) {
    .fondoTop5 {
       background-image: url("../Assets/Imgs/rosario33.jpg");
@@ -47,10 +60,12 @@
       ;
       gap: 10px;
    }
-   .ubicacionTop5 p{
+
+   .ubicacionTop5 p {
       text-align: center;
-  
-  }
+
+   }
+
    .seccionFooterArriba div a {
       display: none;
    }
@@ -58,7 +73,7 @@
    p,
    h3 {
       text-align: center;
-      
+
    }
 
    .top1 {
@@ -89,7 +104,7 @@
    /*Mobile Seccion Galeria*/
 
    @media(max-width:576px) {
-      
+
       .fondoGaleria {
          background-image: url("../Assets/Imgs/rosario30.jpg");
          background-repeat: $background-repeat-general;
@@ -168,63 +183,102 @@
          width: 100%;
 
       }
-      .trenes h3{
-         text-align: center;
-      }
-      .trenes{  p{
-         text-align: center;
-      }
-   ul li a {
-      text-align: center;
 
-   }
-   .omnibus p {
-      text-align: center;
-   }
-   .posicion {
-display: flex;  
-flex-direction: column;
-justify-content: center; }
-   }
-      .rutas   ul li {
+      .trenes h3 {
          text-align: center;
       }
-      .rutas h3{
-         text-align: center;
-      }
-   
-   p{
-      text-align: center
-   }
-   a{
-      text-align: center
-   }
-   }
-      
 
-      .posicionHoteles {
+      .trenes {
+         p {
+            text-align: center;
+         }
+      }
+
+      ul li a {
+         text-align: center;
+
+      }
+
+      .omnibus div h3 p {
+
+         text-align: center;
+      }
+
+      .posicion {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+      }
+
+      .rutas ul li {
+         text-align: center;
+      }
+
+      .rutas h3 {
+         text-align: center;
+      }
+
+      p {
+         text-align: center
+      }
+
+      a {
+         text-align: center
+      }
+
+      .enlaceTransporte article .omnibus h3,
+      p,
+      div a {
+         text-align: center;
+      }
+
+      .enlaceTransporte article .trenes .posicion li a {
+         text-align: center;
+      }
+
+      div a {
+         text-align: center;
+      }
+
+
+      .posicionHoteles article {
          @include props-flex(column, space-evenly, center);
          width: 100%;
 
          padding-left: 25px;
 
       }
+
+      .enlaceTransporte {
+         @include props-flex(column, center, center);
+         width: 100%;
+      }
+
    }
 
    /**Mobile Contacto**/
    @media(max-width:576px) {
 
-   .fondoContacto {
-      background-image: url("../Assets/Imgs/rosario41.jpg");
-      background-repeat: $background-repeat-general;
-      background-size: contain;
-      height: $variable-general;
-   } 
-.formulario{
-    
-   h4,h3{
-   text-align: center;
-}}
- 
-}
+      .fondoContacto {
+         background-image: url("../Assets/Imgs/rosario41.jpg");
+         background-repeat: $background-repeat-general;
+         background-size: contain;
+         height: $variable-general;
+      }
 
+      .formulario {
+         @include props-flex(column, center, center);
+         width: 100%;
+      }
+
+      .formulario {
+
+         h4,
+         h3 {
+            text-align: center;
+         }
+      }
+
+
+   }
+}

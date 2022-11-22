@@ -1,26 +1,31 @@
 footer {
+    width: 100%;
     background-color: rgb(82, 83, 150);
+    /**aplico grids**/
+    display: grid;
+    grid-template-columns: 40% 25% 35% ;
+    grid-template-rows:2fr auto 1fr ;
+    grid-template-areas:
+    "copyright . ."
+    ". seccionRedes ."
+    ". . seccionFooterArriba"    ;
 }
-
 .copyright {
-    p {
-        text-align: left;
-        font-size: 1.0 rem;
-    }
+grid-area:copyright ;
+ 
 }
-
-.seccionRedes {
-    /*aplico flexbox*/
-    @include props-flex(row, center, center);
+.seccionRedes{
+ 
+grid-area:seccionRedes ;
+@include props-flex(row, center, center);
 }
-
 .seccionFooterArriba {
-    text-align: right;
-
-    a {
-        font-size: 2.0rem;
-        color: rgb(255, 255, 255);
-        padding-right: 10px;
-    }
-
+ 
+grid-area: seccionFooterArriba;
+justify-self: end;
+align-self: end;
+padding-right: 10px;
+a{font-size: 2.0rem;
+    color: rgb(255, 255, 255);
+}
 }

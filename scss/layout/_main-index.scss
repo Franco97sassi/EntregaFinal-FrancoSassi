@@ -3,6 +3,7 @@
     background-repeat: $background-repeat-general;
     background-size: $background-size-general;
     height: $variable-general;
+    width: 100%;
 }
 
 .mapaUbicacion {
@@ -11,7 +12,8 @@
 }
 
 .videosPosicion {
-    /**aplico flexbox y mixins**/
-    @include props-flex(row, space-around, center);
+    /**aplico flexbox y mixins **/
+    @include props-flex(row, space-around, center); 
     width: 100%;
 }
+ 

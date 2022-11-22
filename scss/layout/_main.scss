@@ -8,45 +8,15 @@ h1 {
     text-align: center;
     font-size: 8.0rem;
     font-family: 'Ubuntu', sans-serif;
-    -webkit-animation-name: heartBeat;
+    /**aplico animacion**/
     animation-name: heartBeat;
-    -webkit-animation-duration: 1.3s;
     animation-duration: 1.3s;
-    -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
-    -webkit-animation-duration: 1s;
     animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
- 
 }
 
-@-webkit-keyframes heartBeat {
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
 
-    14% {
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
-    }
-
-    28% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-
-    42% {
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
-    }
-
-    70% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
 
 @keyframes heartBeat {
     0% {
@@ -80,15 +50,15 @@ a {
     color: rgb(255, 254, 253);
     font-weight: bold;
     text-align: left;
-
 }
 
 .textoFondo {
-    color: azure;
     font-weight: normal;
     color: black;
     text-align: left;
     padding-left: 25px;
+    font-size: 2.0rem;
+
 }
 
 p {
@@ -98,8 +68,6 @@ p {
     font-size: 2.0rem;
     font-family: 'Lato', monospace;
     text-align: left;
-
-
 }
 
 h2 {
@@ -114,7 +82,6 @@ h2 {
 h3 {
      @extend h2;
     font-size: 3.0rem;
-
 }
 
 h4 {

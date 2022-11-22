@@ -21,6 +21,7 @@ header{
         opacity: 0;
         background-color: rgb(47, 0, 61);
         transform: scale(2,1);
+        font-size: 2.0rem;
     }
 
     100% {
@@ -39,9 +40,9 @@ header{
         a {
             color: rgb(255, 254, 253);
             font-weight: bold;
-            font-size: 2.0rem;          
-            text-decoration: none;
+            font-size: 2.0rem;
         }
     }
 }
+
  
