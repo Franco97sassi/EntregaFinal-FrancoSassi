@@ -1,0 +1,19 @@
+{
+  "name": "pf-francosassi",
+  "version": "1.0.0",
+  "description": "Utilize Prepros para configurar sass ya que no me funcionaban ninguna de las instalaciones de consola",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Franco97sassi/PF-FrancoSassi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Franco97sassi/PF-FrancoSassi/issues"
+  },
+  "homepage": "https://github.com/Franco97sassi/PF-FrancoSassi#readme"
+}
