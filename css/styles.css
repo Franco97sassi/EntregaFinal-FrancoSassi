@@ -84,6 +84,7 @@ header {
 main {
   background-color: #d8d8d8;
   padding-bottom: 25px;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -220,6 +221,7 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .videosPosicion {
@@ -258,6 +260,7 @@ h4 {
   grid-template-rows: repeat(3, 1fr);
       grid-template-areas: "top1   top2  " "top3   top4  " "top5   .   ";
   gap: 10px;
+  width: 100%;
 }
 .ubicacionTop5 p {
   text-align: left;
@@ -537,6 +540,7 @@ article div p {
 textarea {
   font-size: 1.5rem;
   border-radius: 5px;
+  width: 100%;
 }
 
 .enlaceInfo a {
