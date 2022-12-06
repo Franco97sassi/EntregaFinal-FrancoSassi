@@ -47,9 +47,9 @@
     padding-top: 25px;
     padding-left: 25px;
     display: grid;
-    grid-template-columns:(3,1fr) ;
-    grid-template-rows:(3,1fr) ;
-   
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: (3, 1fr);
+
     grid-template-areas:
         "im1 im2 im3"
         "im4 im5 im6"

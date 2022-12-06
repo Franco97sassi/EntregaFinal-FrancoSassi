@@ -77,11 +77,12 @@ h2 {
     color: rgb(15, 9, 2);
     font-family: 'Ubuntu', sans-serif;
     font-size: 4.0rem;
-    
+
 }
+
 /**aplico extend**/
 h3 {
-     @extend h2;
+    @extend h2;
     font-size: 3.0rem;
 }
 
@@ -91,9 +92,8 @@ h4 {
 }
 
 .posicionTitulos {
- text-align: center;
+    text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
     width: 100%;
- }
- 
+}

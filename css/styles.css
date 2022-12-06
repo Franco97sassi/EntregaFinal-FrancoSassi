@@ -439,7 +439,8 @@ h4 {
   width: 100%;
   padding-left: 25px;
 }
-.posicionEntradas div, .posicionEntradas h4 {
+.posicionEntradas div,
+.posicionEntradas h4 {
   text-align: left;
 }
 
@@ -450,7 +451,9 @@ article div p {
 .enlaceTransporte {
   padding-left: 25px;
 }
-.enlaceTransporte div, .enlaceTransporte h3, .enlaceTransporte a {
+.enlaceTransporte div,
+.enlaceTransporte h3,
+.enlaceTransporte a {
   text-align: left;
 }
 
@@ -525,7 +528,8 @@ article div p {
 .formulario {
   padding-left: 25px;
 }
-.formulario h3, .formulario h4 {
+.formulario h3,
+.formulario h4 {
   text-align: left;
   border-radius: 5px;
 }
@@ -626,7 +630,12 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  h1, h2, h3, h4, p, ul li {
+  h1,
+h2,
+h3,
+h4,
+p,
+ul li {
     text-align: center;
   }
   /*Tablet top5*/

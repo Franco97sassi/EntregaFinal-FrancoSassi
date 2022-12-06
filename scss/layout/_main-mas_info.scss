@@ -5,70 +5,81 @@
     height: $variable-general;
 }
 
-.posicionEntradas   {
-    @include props-flex(column,center,flex-start);
-    width:100%;
+.posicionEntradas {
+    @include props-flex(column, center, flex-start);
+    width: 100%;
     padding-left: 25px;
-    div,h4{
+
+    div,
+    h4 {
         text-align: left;
 
     }
- 
+
 }
- 
+
 
 section {
     div {
         h4 {
             input {
-             @extend .button
+                @extend .button
             }
         }
     }
 }
-article div p{
+
+article div p {
     text-align: left;
 }
 
 .enlaceTransporte {
     padding-left: 25px;
-div , h3,a{
+
+    div,
+    h3,
+    a {
         text-align: left;
     }
 }
- 
+
 
 
 
 .trenes {
-    h3{
-        text-align: left;}
-     
+    h3 {
+        text-align: left;
+    }
+
     ul {
-       p { text-align: left;
+        p {
+            text-align: left;
         }
+
         li {
             list-style-type: none;
             text-align: left;
-            a{
+
+            a {
                 list-style-type: none;
                 text-align: left;
-    
+
             }
 
         }
     }
-} 
+}
 
 .rutas {
-    h3{
+    h3 {
         text-align: left;
     }
+
     ul {
         li {
             list-style-type: none;
             text-align: left;
-       
+
         }
     }
 }
@@ -88,19 +99,19 @@ div , h3,a{
         }
     }
 }
- 
+
 
 .posicionHoteles {
     padding-left: 25px;
-    @include props-flex(row,space-around,center);
-  article img{
-    padding-right: 25px;
-text-align: center;}
+    @include props-flex(row, space-around, center);
 
-p    { text-align: left;
+    article img {
+        padding-right: 25px;
+        text-align: center;
+    }
 
-}}
- 
- 
+    p {
+        text-align: left;
 
- 
+    }
+}

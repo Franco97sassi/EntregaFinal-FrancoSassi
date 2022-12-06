@@ -1,6 +1,6 @@
 .padding {
     padding-bottom: 0px;
-    
+
 }
 
 .fondoContacto {
@@ -10,14 +10,16 @@
     height: $variable-general;
 }
 
-.formulario{
+.formulario {
     padding-left: 25px;
-  h3 ,h4
-  {
-    text-align: left;
-    border-radius: 5px;
 
-}}
+    h3,
+    h4 {
+        text-align: left;
+        border-radius: 5px;
+
+    }
+}
 
 .fondoForm {
     background-color: azure;
@@ -30,10 +32,10 @@
 textarea {
     font-size: 1.5rem;
     border-radius: 5px;
- 
+
 }
 
- 
+
 
 .enlaceInfo {
     a {

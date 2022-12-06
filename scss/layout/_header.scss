@@ -1,6 +1,7 @@
-header{
-    background-color:rgb(156, 92, 175);
+header {
+    background-color: rgb(156, 92, 175);
 }
+
 .logo {
     color: rgb(255, 255, 255);
     /** Uso de Gradientes  **/
@@ -11,7 +12,8 @@ header{
     /** aplico Animacion **/
     animation-duration: 1s;
     animation-name: logoInicio;
-    a{
+
+    a {
         color: white;
     }
 }
@@ -20,7 +22,7 @@ header{
     0% {
         opacity: 0;
         background-color: rgb(47, 0, 61);
-        transform: scale(2,1);
+        transform: scale(2, 1);
         font-size: 2.0rem;
     }
 
@@ -29,13 +31,14 @@ header{
     }
 }
 
-    /**aplico nesting**/
+/**aplico nesting**/
 .nav {
     background-color: rgb(156, 92, 175);
-    line-height: 2;    
+    line-height: 2;
     list-style-type: none;
     gap: 25px;
     padding-right: 15px;
+
     li {
         a {
             color: rgb(255, 254, 253);
@@ -44,5 +47,3 @@ header{
         }
     }
 }
-
- 

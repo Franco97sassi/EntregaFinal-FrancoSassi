@@ -4,7 +4,7 @@
     background-size: $background-size-general;
     height: $variable-general;
 }
- 
+
 
 .ubicacionTop5 {
     /**aplico grids**/
@@ -18,43 +18,45 @@
         "top3   top4  "
         "top5   .   ";
     gap: 10px;
-    p{
+
+    p {
         text-align: left;
     }
+
     width: 100%;
 }
- 
+
 
 .top1 {
     grid-area: top1;
     display: grid;
     justify-items: center;
-    
+
 }
 
 .top2 {
     @extend .top1;
     grid-area: top2;
-    
+
 
 }
 
 .top3 {
     @extend .top1;
     grid-area: top3;
-  
+
 }
 
 .top4 {
     @extend .top1;
 
     grid-area: top4;
- 
+
 }
 
 .top5 {
     @extend .top1;
 
     grid-area: top5;
- 
+
 }

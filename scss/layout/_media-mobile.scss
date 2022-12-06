@@ -1,7 +1,6 @@
 /**Mobile seccion Index**/
 @media(max-width:576px) {
-   .nav{
-   }
+
    .fondoIndex {
       background-image: url("../Assets/Imgs/rosario37.jpg");
       background-repeat: $background-repeat-general;
@@ -34,7 +33,7 @@
    .seccionRedes {
       grid-area: seccionRedes;
       @include props-flex(row, flex-end, flex-end);
- 
+
    }
 
 }
@@ -46,11 +45,11 @@
       background-repeat: $background-repeat-general;
       background-size: contain;
       height: $variable-general;
-      
-         h1{
-            display: none;
-          }
-      
+
+      h1 {
+         display: none;
+      }
+
    }
 
    .ubicacionTop5 {
@@ -269,7 +268,7 @@
 
    /**Mobile Contacto**/
    @media(max-width:576px) {
-  
+
 
       .fondoContacto {
          background-image: url("../Assets/Imgs/rosario41.jpg");
