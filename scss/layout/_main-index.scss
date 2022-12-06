@@ -9,8 +9,7 @@
 .mapaUbicacion {
     /**aplico flexbox**/
     @include props-flex(row, center, center);
-    width: 100%;
-
+    width:500px;
 }
 
 .videosPosicion {

@@ -46,6 +46,11 @@
       background-repeat: $background-repeat-general;
       background-size: contain;
       height: $variable-general;
+      
+         h1{
+            display: none;
+          }
+      
    }
 
    .ubicacionTop5 {
@@ -62,10 +67,13 @@
          "top5"
       ;
       gap: 10px;
+      width: 100%;
+
    }
 
    .ubicacionTop5 p {
       text-align: center;
+      width: 100%;
 
    }
 
@@ -261,6 +269,11 @@
 
    /**Mobile Contacto**/
    @media(max-width:576px) {
+      .padding{
+          padding-right: 25px;
+
+
+      }
 
       .fondoContacto {
          background-image: url("../Assets/Imgs/rosario41.jpg");

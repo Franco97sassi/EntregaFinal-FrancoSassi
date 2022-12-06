@@ -221,7 +221,7 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 500px;
 }
 
 .videosPosicion {
@@ -540,7 +540,6 @@ article div p {
 textarea {
   font-size: 1.5rem;
   border-radius: 5px;
-  width: 100%;
 }
 
 .enlaceInfo a {
@@ -819,6 +818,9 @@ footer {
     background-size: contain;
     height: 100vh;
   }
+  .padding {
+    padding-right: 25px;
+  }
 }
 /**Mobile seccion Index**/
 @media (max-width: 576px) {
@@ -904,6 +906,9 @@ footer {
     background-size: contain;
     height: 100vh;
   }
+  .fondoTop5 h1 {
+    display: none;
+  }
   .ubicacionTop5 {
     /** Para mobile aplico grid y aca si cambio la disposicion**/
     display: -ms-grid;
@@ -917,9 +922,11 @@ footer {
     grid-template-rows: repeat(5, 1fr);
         grid-template-areas: "top1" "top2" "top3" "top4" "top5";
     gap: 10px;
+    width: 100%;
   }
   .ubicacionTop5 p {
     text-align: center;
+    width: 100%;
   }
   .seccionFooterArriba div a {
     display: none;
@@ -1175,6 +1182,9 @@ div a {
   }
 }
 @media (max-width: 576px) and (max-width: 576px) {
+  .padding {
+    padding-right: 25px;
+  }
   .fondoContacto {
     background-image: url("../Assets/Imgs/rosario41.jpg");
     background-repeat: no-repeat;
