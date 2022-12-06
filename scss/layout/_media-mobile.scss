@@ -1,5 +1,7 @@
 /**Mobile seccion Index**/
 @media(max-width:576px) {
+   .nav{
+   }
    .fondoIndex {
       background-image: url("../Assets/Imgs/rosario37.jpg");
       background-repeat: $background-repeat-general;
@@ -31,8 +33,6 @@
 
    .seccionRedes {
       grid-area: seccionRedes;
-      width:50%;
-      height:50%;
       @include props-flex(row, flex-end, flex-end);
  
    }

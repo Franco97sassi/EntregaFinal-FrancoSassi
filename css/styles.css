@@ -859,8 +859,6 @@ footer {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: seccionRedes;
-    width: 50%;
-    height: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
