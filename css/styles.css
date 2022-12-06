@@ -221,7 +221,7 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 500px;
+  width: 100%;
 }
 
 .videosPosicion {
