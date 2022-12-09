@@ -1,6 +1,5 @@
 .padding {
-    padding-bottom: 0px;
-
+    padding-bottom: 10px;
 }
 
 .fondoContacto {
@@ -12,30 +11,24 @@
 
 .formulario {
     padding-left: 25px;
-
-    h3,
-    h4 {
-        text-align: left;
-        border-radius: 5px;
-
-    }
+    border-radius: 5px;
 }
-
+ 
 .fondoForm {
     background-color: azure;
     color: rgb(0, 0, 0);
-    font-family: 'Noto Sans Mono', monospace;
-    border-radius: 5px;
-
+     border-radius: 5px;
+  width: 400px;
+  font-family: 'Lato', monospace;
 }
 
 textarea {
     font-size: 1.5rem;
     border-radius: 5px;
-
+    width: 600px;
+    background-color: azure;
+    font-family: 'Lato', monospace;
 }
-
-
 
 .enlaceInfo {
     a {

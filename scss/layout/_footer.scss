@@ -20,6 +20,7 @@ footer {
 
     grid-area: seccionRedes;
     @include props-flex(row, center, center);
+    gap:10px;
 }
 
 .seccionFooterArriba {

@@ -10,76 +10,36 @@
     width: 100%;
     padding-left: 25px;
 
-    div,
-    h4 {
+    div,h4 {
         text-align: left;
-
     }
-
 }
-
 
 section {
     div {
-        h4 {
             input {
                 @extend .button
             }
-        }
     }
-}
-
-article div p {
-    text-align: left;
 }
 
 .enlaceTransporte {
     padding-left: 25px;
-
-    div,
-    h3,
-    a {
-        text-align: left;
-    }
 }
 
-
-
-
 .trenes {
-    h3 {
-        text-align: left;
-    }
-
     ul {
-        p {
-            text-align: left;
-        }
-
+       
         li {
             list-style-type: none;
-            text-align: left;
-
-            a {
-                list-style-type: none;
-                text-align: left;
-
-            }
-
         }
     }
 }
 
 .rutas {
-    h3 {
-        text-align: left;
-    }
-
     ul {
         li {
             list-style-type: none;
-            text-align: left;
-
         }
     }
 }
@@ -100,18 +60,11 @@ article div p {
     }
 }
 
-
 .posicionHoteles {
     padding-left: 25px;
     @include props-flex(row, space-around, center);
-
+    column-gap: 10px;
     article img {
         padding-right: 25px;
-        text-align: center;
-    }
-
-    p {
-        text-align: left;
-
     }
 }

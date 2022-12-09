@@ -12,12 +12,14 @@ html {
   font-size: 62.5%;
 }
 
-.button, section div h4 input {
+.button, section div input {
   color: white;
   background-color: #000000;
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-weight: normal;
+  font-size: 2rem;
   line-height: 1.7;
+  width: 100px;
+  border-radius: 5px;
 }
 
 header {
@@ -157,14 +159,6 @@ a {
   text-align: left;
 }
 
-.textoFondo {
-  font-weight: normal;
-  color: black;
-  text-align: left;
-  padding-left: 25px;
-  font-size: 2rem;
-}
-
 p {
   line-height: 1.7;
   color: rgb(14, 9, 9);
@@ -262,17 +256,24 @@ h4 {
   gap: 10px;
   width: 100%;
 }
-.ubicacionTop5 p {
-  text-align: left;
-}
 
 .top1, .top5, .top4, .top3, .top2 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: top1;
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .top2 {
@@ -306,47 +307,6 @@ h4 {
   height: 100vh;
 }
 
-.imagenes img {
-  border: solid rgb(0, 0, 0) 5px;
-  border-radius: 5px;
-  /**aplico animacion**/
-  -webkit-animation-name: shake;
-          animation-name: shake;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-@-webkit-keyframes shake {
-  from, to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-}
-
-@keyframes shake {
-  from, to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-}
 .posicionImagenes {
   width: 100%;
   padding-top: 25px;
@@ -359,6 +319,9 @@ h4 {
   grid-template-rows: 3, 1fr;
       grid-template-areas: "im1 im2 im3" "im4 im5 im6" "im7 im8 im9";
   row-gap: 25px;
+}
+.posicionImagenes img {
+  border-radius: 15px;
 }
 
 .im1 img {
@@ -439,45 +402,20 @@ h4 {
   width: 100%;
   padding-left: 25px;
 }
-.posicionEntradas div,
-.posicionEntradas h4 {
-  text-align: left;
-}
-
-article div p {
+.posicionEntradas div, .posicionEntradas h4 {
   text-align: left;
 }
 
 .enlaceTransporte {
   padding-left: 25px;
 }
-.enlaceTransporte div,
-.enlaceTransporte h3,
-.enlaceTransporte a {
-  text-align: left;
-}
 
-.trenes h3 {
-  text-align: left;
-}
-.trenes ul p {
-  text-align: left;
-}
 .trenes ul li {
   list-style-type: none;
-  text-align: left;
-}
-.trenes ul li a {
-  list-style-type: none;
-  text-align: left;
 }
 
-.rutas h3 {
-  text-align: left;
-}
 .rutas ul li {
   list-style-type: none;
-  text-align: left;
 }
 
 /**aplico nesting**/
@@ -505,17 +443,16 @@ article div p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
 }
 .posicionHoteles article img {
   padding-right: 25px;
-  text-align: center;
-}
-.posicionHoteles p {
-  text-align: left;
 }
 
 .padding {
-  padding-bottom: 0px;
+  padding-bottom: 10px;
 }
 
 .fondoContacto {
@@ -527,23 +464,23 @@ article div p {
 
 .formulario {
   padding-left: 25px;
-}
-.formulario h3,
-.formulario h4 {
-  text-align: left;
   border-radius: 5px;
 }
 
 .fondoForm {
   background-color: azure;
   color: rgb(0, 0, 0);
-  font-family: "Noto Sans Mono", monospace;
   border-radius: 5px;
+  width: 400px;
+  font-family: "Lato", monospace;
 }
 
 textarea {
   font-size: 1.5rem;
   border-radius: 5px;
+  width: 600px;
+  background-color: azure;
+  font-family: "Lato", monospace;
 }
 
 .enlaceInfo a {
@@ -588,6 +525,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 10px;
 }
 
 .seccionFooterArriba {
@@ -828,13 +766,27 @@ ul li {
     height: 100vh;
   }
 }
-/**Mobile seccion Index**/
 @media (max-width: 576px) {
+  footer {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    -ms-grid-rows: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+        grid-template-areas: "copyright ." ". seccionRedes";
+    padding-bottom: 5px;
+  }
+  /**Mobile seccion Index**/
   .fondoIndex {
     background-image: url("../Assets/Imgs/rosario37.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     height: 100vh;
+  }
+  h1 {
+    display: none;
   }
   .videosPosicion {
     /**aplico flexbox y mixins**/
@@ -851,16 +803,6 @@ ul li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  footer {
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 2fr 1fr;
-    grid-template-columns: 2fr 1fr;
-    -ms-grid-rows: 1fr 2fr;
-    grid-template-rows: 1fr 2fr;
-        grid-template-areas: "copyright ." ". seccionRedes";
   }
   .copyright {
     -ms-grid-row: 1;
@@ -997,6 +939,9 @@ h3 {
     background-size: contain;
     height: 100vh;
   }
+  h1 {
+    display: none;
+  }
   .posicionImagenes {
     display: -ms-grid;
     display: grid;
@@ -1089,6 +1034,9 @@ h3 {
     background-repeat: no-repeat;
     background-size: contain;
     height: 100vh;
+  }
+  h1 {
+    display: none;
   }
   .posicionEntradas {
     display: -webkit-box;
@@ -1194,6 +1142,9 @@ div a {
     background-size: contain;
     height: 100vh;
   }
+  h1 {
+    display: none;
+  }
   .formulario {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1213,5 +1164,8 @@ div a {
   .formulario h4,
 .formulario h3 {
     text-align: center;
+  }
+  .fondoForm, textarea {
+    width: 400px;
   }
 }
