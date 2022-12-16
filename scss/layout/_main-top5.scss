@@ -19,12 +19,16 @@
         "top5   .   ";
     gap: 10px;
     width: 100%;
- 
+  
 }
 
 .top1 {
     grid-area: top1;
     @include props-flex(column, center, center);
+    p{
+        width: 500px;
+
+    }
 }
 
 .top2 {

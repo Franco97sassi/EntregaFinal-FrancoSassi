@@ -9,11 +9,13 @@
     @include props-flex(column, center, flex-start);
     width: 100%;
     padding-left: 25px;
+  gap: 50px;
+  
 
-    div,h4 {
+    h4 {
         text-align: left;
     }
-}
+ }
 
 section {
     div {
@@ -26,7 +28,14 @@ section {
 .enlaceTransporte {
     padding-left: 25px;
 }
-
+.omnibus{
+     
+       ul{  
+        li {
+            list-style-type: none;
+        }}
+     
+}
 .trenes {
     ul {
        
@@ -62,9 +71,16 @@ section {
 
 .posicionHoteles {
     padding-left: 25px;
-    @include props-flex(row, space-around, center);
+    @include props-flex(row, space-around, none);
     column-gap: 10px;
-    article img {
+    row-gap: 10px;
+    article{  
+        img {
         padding-right: 25px;
     }
+    div p{
+        width: 375px;
+    }
+
+} 
 }
